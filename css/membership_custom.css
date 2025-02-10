@@ -1,0 +1,140 @@
+:root {
+  --section-header-bg: rgb(239, 89, 43);
+  --bg-primary-1: rgb(23, 41, 73);
+  --bg-primary-2: rgb(239, 89, 43);
+  --bg-primary-3: white;
+  --bg-primary-2-tr: rgba(239, 89, 43, 0.5);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+.bg-one {
+  background-color: var(--bg-primary-1);
+}
+
+.bg-two {
+  background-color: var(--bg-primary-2);
+}
+
+.bg-three {
+  background-color: var(--bg-primary-3);
+}
+
+section.long-section, section.section-page-container {
+  min-height: 100vh;
+  position: relative;
+  font-family: "Work Sans" !important;
+}
+
+section .section-header {
+  font-size: 20pt;
+  font-weight: bold;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 15px;
+  position: relative;
+  width: calc(100% - 70px);
+  max-width: 700px;
+  background-color: var(--bg-primary-2);
+  text-align: right;
+  box-shadow: var(--shadow-md);
+}
+
+section .section-header::after {
+  content: " ";
+  position: absolute;
+  width: 50px;
+  height: 100%;
+  left: 100%;
+  top: 0;
+  background-color: var(--bg-primary-2);
+  clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+  border-top-right-radius: 2px;
+}
+
+.section-wrapper {
+  width: 100%;
+  padding: 20px 40px;
+}
+
+.section-wrapper .section-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 2px;
+  min-height: calc(100vh - 250px);
+  text-align: left;
+  box-shadow: var(--shadow-md);
+  color: var(--bg-primary-1);
+}
+
+.section-content h2 {
+  font-size: 22pt;
+  margin-bottom: 20px;
+}
+
+.section-content p {
+  font-size: 16pt;
+}
+
+.section-header-title {
+  font-size: 20pt;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 35px;
+  width: 100%;
+  max-width: 700px;
+  padding-right: 20px;
+}
+
+.section-content-style {
+  padding: 10px;
+  position: relative;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.section-content-style h2 {
+  font-size: 22pt;
+  margin-bottom: 20px;
+}
+
+.section-content-style p {
+  font-size: 16pt;
+}
+
+#header-1, #content-1, #header-2, #content-2,
+#content-3, #content-4, #content-5, #content-6,
+#content-7, #content-8, #content-9 {
+  opacity: 1;
+}
+
+.end-section-animation {
+  min-height: 100vh;
+}
+
+
+#horizontal-container {
+  overflow: hidden;
+  min-height: calc(100vh - 200px);
+}
+
+#horizontal-section {
+  display: flex;
+  overflow: hidden;
+}
+
+#horizontal-section section {
+  min-width: 100%;
+}
+
+.horizontal-content {
+  background-color: var(--bg-primary-3);
+  box-shadow: var(--shadow-md);
+  z-index: 1;
+  padding: 10px;
+  border-radius: 3px;
+  min-height: 400px;
+}

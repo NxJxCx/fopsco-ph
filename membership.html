@@ -28,6 +28,7 @@
     <p><img src="//matomo.groovetech.io/matomo.php?idsite=4&rec=1" style="border:0;" alt="" /></p>
   </noscript>
   <link data-gp-stylesheet="" href="css/membership.css" rel="stylesheet">
+  <link href="css/membership_custom.css" rel="stylesheet">
   <script src="js/alpine.min.js" defer=""></script>
 </head>
 
@@ -40,126 +41,53 @@
   <div id="custom-top"> </div>
   <script> (function () { var populateSiteSettings = async function () { if (window.encodeSite) { const result = await encodeSite({ "pages": "eyI5RkROR2hHRUEiOnsidXJsIjoiaW5kZXgifSwiRGx6a1RTYUpkIjp7InVybCI6ImFib3V0LXVzIn0sIlQzUEFmQW5FZiI6eyJ1cmwiOiJwYXJ0bmVycyJ9LCJzYjhGSjdtVDciOnsidXJsIjoiY29udGFjdC11cyJ9LCJPbmlfWXFSREwiOnsidXJsIjoiY2FzZS1zdHVkeSJ9LCJ3TE4wVHJrVUgiOnsidXJsIjoibWVtYmVyc2hpcCJ9LCJ1SXlKUTdiNkYiOnsidXJsIjoidGVybXMtYW5kLWNvbmRpdGlvbiJ9LCJhOUFVZEZMNmEiOnsidXJsIjoicHJpdmFjeS1wb2xpY3kifSwiYnVPSFVtbTYxIjp7InVybCI6ImluZGV4LWNvcHkifX0=", "popups": [], "navigation": [{ "url": "index", "name": "HOME", "megamenu": null, "megamenuHideScreens": [], "megamenuAlignment": null, "megamenuMaxWidth": null, "children": [] }, { "url": "about-us", "name": "ABOUT", "megamenu": null, "megamenuHideScreens": [], "megamenuAlignment": null, "megamenuMaxWidth": null, "children": [] }, { "url": "membership", "name": "MEMBERSHIP", "megamenu": null, "megamenuHideScreens": [], "megamenuAlignment": null, "megamenuMaxWidth": null, "children": [] }, { "url": "partners", "name": "PARTNERS", "megamenu": null, "megamenuHideScreens": [], "megamenuAlignment": null, "megamenuMaxWidth": null, "children": [] }, { "url": "contact-us", "name": "CONTACT US", "megamenu": null, "megamenuHideScreens": [], "megamenuAlignment": null, "megamenuMaxWidth": null, "children": [] }], "baseURL": "https://v1.gdapis.com/api" }, "65c07809eeff8f0f7c60e362"); if (!window.inBuilder && window.websiteurl) { const separator = window.websiteurl.charAt(window.websiteurl.length - 1) === '/' ? '' : '/'; for (const page in window.site.pages) { window.site.pages[page].url = window.websiteurl + separator + window.site.pages[page]?.url; } } if (window.site) window.encodeSite = undefined; site.subscribed = []; site.subscribe = callback => { site.subscribed.push(callback); }; var clearSiteCheck = setInterval(function () { if (window.site.isProxy) { window.dispatchEvent(new Event('settingsLoaded')); clearInterval(clearSiteCheck); } }, 250); } }; document.readyState !== 'loading' ? populateSiteSettings() : document.addEventListener("DOMContentLoaded", populateSiteSettings); })(); </script>
   <div id="page-container" data-gp-page-id="wLN0TrkUH">
-    <div class="blocks-container" id="blocks-container">
-      <section class="gp-component gp-component-id-6IqMDXDMM5" data-gp-component="block" data-gp-style=""
-        data-gp-block="true" data-gp-component-id="6IqMDXDMM5" tabindex="0" data-gp-block-id="hOp9mtwOz0"
-        data-gp-block-type="block" data-gp-block-data="{" id":"hop9mtwoz0","type":"block"}"="" id="6IqMDXDMM5"><a
-          name="6IqMDXDMM5" data-gp-block-anchor=""></a>
-        <div class="" data-section-overlay=""></div>
-        <div class="gp-component gp-component-id-lhp9vF0BHa" data-gp-container="" data-gp-style=""
-          data-gp-component-id="lhp9vF0BHa" data-gp-component="null" tabindex="0">
-          <div class="gp-component gp-component-id-MNoqNUnhle" data-gp-component="layout-3-3-3" data-gp-dnd=""
-            data-gp-style="" data-gp-component-id="MNoqNUnhle" tabindex="0">
-            <div class="gp-component-id-hsZybUjiIH">
-              <div class="gp-component-id-1FA7wbuibW" data-gp-grid-col=""> </div>
-              <div class="gp-component-id-hSLpApWzj7" data-gp-grid-col="">
-                <div class="gp-component gp-component-id-J3e25vhiYS" data-gp-container="" data-gp-style=""
-                  data-gp-component-id="J3e25vhiYS" data-gp-component="container" tabindex="0">
-                  <div class="gp-text-container gp-component gp-component-id-P_RW0tom80" data-gp-style=""
-                    data-gp-text="" data-gp-component="text_2" data-gp-dnd="" data-gp-component-id="P_RW0tom80" style=""
-                    tabindex="0">
-                    <h3 class="gp-component-id-ghWmvCPQVj" data-id="quill-node-0">HOW TO BECOME A MEMBER OF FOPSCo?</h3>
-                  </div>
-                </div>
-              </div>
-              <div class="gp-component-id-1GAfhE960Tl" data-gp-grid-col=""> </div>
-            </div>
+    <div class="blocks-container bg-one" id="blocks-container">
+      <div class="bg-one">
+        <section class="long-section">
+          <div class="section-header">
+            How to Become a FOPSCo Member?
           </div>
-        </div>
-      </section>
-      <section class="gp-component-id-tMozBuK7oF gp-component" data-gp-component="block" data-gp-style=""
-        data-gp-block-id="79395" data-gp-block="true" data-gp-block-data="{"
-        id":79395,"type":"block","thumbnail":"https:="" assets.grooveapps.com="" elements-previews="" thumbs=""
-        empty.png","category":"empty=""
-        blocks","tag":"designed","user_id":"global","filename":"_empty_0","height":0,"global":1,"tailwind":1}"=""
-        data-gp-component-id="tMozBuK7oF" data-gp-block-type="block" id="tMozBuK7oF" tabindex="0"><a name="tMozBuK7oF"
-          data-gp-block-anchor=""></a>
-        <div class="" data-section-overlay=""></div>
-        <div class="gp-component gp-component-id-8nWalz_6C2" data-gp-container="" data-gp-style=""
-          data-gp-component-id="8nWalz_6C2" data-gp-component="container" tabindex="0">
-          <div data-gp-dnd="" data-gp-style="" data-gp-container="" data-gp-component="container"
-            class="gp-component-id-VLTH6idXY gp-component" data-gp-component-id="VLTH6idXY" tabindex="0">
-            <div class="gp-text-container gp-component gp-component-id-r0bbIkRcTe" data-gp-style="" data-gp-text=""
-              data-gp-component-id="r0bbIkRcTe" data-gp-component="null">
-              <p class="gp-component-id-gqT7BF4MK" style="text-align: center;" data-id="quill-node-0">QUALIFICATIONS</p>
-            </div>
-            <div class="gp-text-container gp-component gp-component-id-CH2cx3z6gB" data-gp-style="" data-gp-text=""
-              data-gp-component-id="CH2cx3z6gB" data-gp-component="null">
-              <p class="gp-component-id-lazI8malS2" style="text-align: center;" data-id="quill-node-0">• A Filipino
+          <div class="section-wrapper">
+            <div class="section-content">
+              <h2>QUALIFICATIONS</h2>
+              <p>• A Filipino
                 Citizen</p>
-              <p class="gp-component-id-lazI8malS2" style="text-align: center;" data-id="quill-node-1"><br></p>
-              <p class="gp-component-id-lazI8malS2" style="text-align: center;" data-id="quill-node-2">• At least 18
+              <p><br></p>
+              <p>• At least 18
                 years old</p>
-              <p class="gp-component-id-lazI8malS2" style="text-align: center;" data-id="quill-node-3"><br></p>
-              <p class="gp-component-id-lazI8malS2" style="text-align: center;" data-id="quill-node-4">•With capacity to
+              <p><br></p>
+              <p>•With capacity to
                 contract</p>
-              <p class="gp-component-id-lazI8malS2" style="text-align: center;" data-id="quill-node-5"><br></p>
-              <p class="gp-component-id-lazI8malS2" style="text-align: center;" data-id="quill-node-6">• Within the
+              <p><br></p>
+              <p>• Within the
                 common bond and field of membership</p>
-              <p class="gp-component-id-lazI8malS2" style="text-align: center;" data-id="quill-node-7"><br></p>
-              <p class="gp-component-id-lazI8malS2" style="text-align: center;" data-id="quill-node-8">• Must be an
+              <p><br></p>
+              <p>• Must be an
                 Online Professional, Aspiring Freelancer who graduated from any DICT or any online freelancing course
                 (If MSME and relatives of regular member- Associate Member only)</p>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="gp-component gp-component-id-j7bnY3c5f" data-gp-component="block" data-gp-style=""
-        data-gp-block="true" data-gp-component-id="j7bnY3c5f" tabindex="0" data-gp-block-id="15039"
-        data-gp-block-type="block" data-gp-block-data="{" id":15039,"type":"block","thumbnail":"https:=""
-        assets.grooveapps.com="" pages-previews=""
-        5f76fefcb01d8.png","category":"content","tag":"designed","user_id":"global","filename":null,"height":0,"global":1,"tailwind":0}"=""
-        id="j7bnY3c5f"><a name="j7bnY3c5f" data-gp-block-anchor=""></a>
-        <div class="" data-section-overlay=""></div>
-        <div class="gp-component gp-component-id-2DuPbkKWdw" data-gp-container="" data-gp-style=""
-          data-gp-component-id="2DuPbkKWdw" data-gp-component="null" tabindex="0">
-          <div class="gp-component gp-component-id-J0IXjsMyZT" data-gp-component="layout-3-3-3" data-gp-dnd=""
-            data-gp-style="" data-gp-component-id="J0IXjsMyZT" tabindex="0">
-            <div class="gp-component-id-hsZybUjiIH">
-              <div class="gp-component-id-1FA7wbuibW" data-gp-grid-col=""> </div>
-              <div class="gp-component-id-hSLpApWzj7" data-gp-grid-col="">
-                <div class="gp-component gp-component-id-Dq91f0EN1b" data-gp-container="" data-gp-style=""
-                  data-gp-component-id="Dq91f0EN1b" data-gp-component="container" tabindex="0">
-                  <div class="gp-text-container gp-component gp-component-id-0kFLV7yh8" data-gp-style="" data-gp-text=""
-                    data-gp-component="text_2" data-gp-dnd="" data-gp-component-id="0kFLV7yh8" style="" tabindex="0">
-                    <h3 class="gp-component-id-vkVuupJrTs" data-id="quill-node-0">THE PROCESS</h3>
-                  </div>
-                </div>
-              </div>
-              <div class="gp-component-id-1GAfhE960Tl" data-gp-grid-col=""> </div>
+        </section>
+        <div id="horizontal-container">
+          <section id="theprocess">
+            <div class="section-header">
+              The Process
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="gp-component-id-xLG8d6xNa gp-component" data-gp-component="block" data-gp-style=""
-        data-gp-block-id="11986" data-gp-block="true" data-gp-block-type="block" data-gp-block-data="{"
-        id":11986,"type":"block","thumbnail":"https:="" assets.grooveapps.com="" elements-previews="" thumbs=""
-        content17.png","category":"content","tag":"wireframe","user_id":"global","filename":"_content_16","height":0,"global":1,"tailwind":1}"=""
-        data-gp-component-id="xLG8d6xNa" id="xLG8d6xNa" tabindex="0" style=""><a name="xLG8d6xNa"
-          data-gp-block-anchor=""></a>
-        <div class="" data-section-overlay=""></div>
-        <div class="gp-component-id-uzf3Kcb8uT gp-component" data-gp-container="" data-gp-style=""
-          data-gp-component-id="uzf3Kcb8uT" data-gp-component="container" tabindex="0">
-          <div class="gp-component-id-HodN8aj9Qp gp-component" data-gp-component="layout-3-3-3" data-gp-dnd=""
-            data-gp-style="" data-gp-component-id="HodN8aj9Qp" tabindex="0">
-            <div class="gp-component-id-kxQrT0DC9N">
-              <div class="gp-component-id-CUAEwz3rG5" data-gp-grid-col="">
-                <div class="gp-component-id-3klnouMW8p gp-component" data-gp-container="" data-gp-style=""
-                  data-gp-component-id="3klnouMW8p" data-gp-component="container" tabindex="0">
-                  <div class="gp-text-container gp-component gp-component-id-ClLtPcSE0Xr" data-gp-style=""
-                    data-gp-text="" data-gp-dnd="" data-gp-component-id="ClLtPcSE0Xr" data-gp-component="null"
-                    tabindex="0">
-                    <h5 class="gp-component-id-_Ft_ycEkmL" data-id="quill-node-0">STEP 1</h5>
-                  </div>
-                  <div class="gp-text-container gp-component gp-component-id-qA2Ua_RtwCU" data-gp-style=""
-                    data-gp-text="" data-gp-dnd="" data-gp-component-id="qA2Ua_RtwCU" data-gp-component="null"
-                    tabindex="0">
-                    <p class="gp-component-id-W7ylPQ0lLK" data-id="quill-node-0">Fill up the application form</p>
-                  </div> <a data-gp-button-id="zM5ZCJLEY"
+          </section>
+          <div id="horizontal-section">
+            <section id="content-2" class="section-content-style">
+              <div class="horizontal-content">
+                <h2>STEP 1</h2>
+                <iframe src="https://lottie.host/embed/a237bfdd-da38-4b62-99eb-a32120c37746/HBS8ZFjmJj.lottie"></iframe>
+                <p>Fill up the application form</p>
+                <div>
+                  <a
+                    data-gp-button-id="zM5ZCJLEY"
                     class="topdragger items-center gp-component gp-component-id-lpUbc1e4T6" data-gp-style=""
                     data-gp-dnd=""
                     href="https://docs.google.com/forms/d/e/1FAIpQLSeJxaxCjuh4Bn6-T6T5v9tG7CAyRm-XJZuxnHX9h_mKKcaZ1Q/viewform"
-                    data-gp-component="button" data-gp-component-id="lpUbc1e4T6">
+                    data-gp-component="button" data-gp-component-id="lpUbc1e4T6"
+                  >
                     <div style="display: inline-block; flex-grow: 1;">
                       <div class="gp-component gp-component-id-UcGgX7F9ok" data-gp-component="button main-label"
                         data-gp-style="" data-gp-component-id="UcGgX7F9ok">Regiser Here</div>
@@ -167,202 +95,137 @@
                   </a>
                 </div>
               </div>
-              <div class="gp-component-id-ag2Eqtw0Fk" data-gp-grid-col="">
-                <div class="gp-component-id-7eS6N0UC02 gp-component" data-gp-container="" data-gp-style=""
-                  data-gp-component-id="7eS6N0UC02" data-gp-component="container" tabindex="0">
-                  <div class="gp-text-container gp-component gp-component-id-5IamezX6jqV" data-gp-style=""
-                    data-gp-text="" data-gp-dnd="" data-gp-component-id="5IamezX6jqV" data-gp-component="null"
-                    tabindex="0">
-                    <h5 class="gp-component-id-0rCAKNQfrd" data-id="quill-node-0">STEP 2</h5>
+            </section>
+            <section id="content-3" class="section-content-style">
+              <div class="horizontal-content">
+                <h2>STEP 2</h2>
+                <p>Watch the Pre-membership Education Seminar (PMES) video</p>
+                <iframe
+                  src="https://www.youtube.com/embed/y765JaBKvU8?rel=0&modestbranding=1&controls=1"
+                  data-gp-vembed-id="VFNOaeBzI" allow="autoplay" frameborder="0" scrolling="no" marginheight="0"
+                  marginwidth="0" allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen=""
+                  oallowfullscreen="" msallowfullscreen="">
+                </iframe>
+              </div>
+            </section>
+            <section id="content-4" class="section-content-style">
+              <div class="horizontal-content">
+                <h2>STEP 3</h2>
+                <p>Participate in the planned Capital
+                  Share and Subscription requirement of at least 15 shares</p>
+                <p class="gp-component-id-r_p9u15mG" data-id="quill-node-0">Share Capital ( minimum of 15 shares
+                  @P100/share)</p>
+                <p class="gp-component-id-r_p9u15mG" data-id="quill-node-1">= <strong><em>P1,500</em></strong></p>
+                <p class="gp-component-id-r_p9u15mG" data-id="quill-node-2"><br></p>
+                <p class="gp-component-id-r_p9u15mG" data-id="quill-node-3">Subscribed Capital (minimum of 35 shares
+                  @P100/share)</p>
+                <p class="gp-component-id-r_p9u15mG" data-id="quill-node-4">= <strong><em>P3,500</em></strong></p>
+                <p class="gp-component-id-r_p9u15mG" data-id="quill-node-5"><strong><em>﻿</em></strong></p>
+                <p class="gp-component-id-r_p9u15mG" data-id="quill-node-6">(note: payable in 24 months)</p>
+                <p class="gp-component-id-r_p9u15mG" data-id="quill-node-7"><br></p>
+                <p class="gp-component-id-r_p9u15mG" data-id="quill-node-8"><strong>TOTAL
+                    =</strong> <strong><em>P5,000</em></strong></p>
+              </div>
+            </section>
+            <section id="content-5" class="section-content-style">
+              <div class="horizontal-content">
+                <h2>STEP 4</h2>
+                <div class="gp-text-container gp-component gp-component-id-cTmtNare6YW" data-gp-style=""
+                  data-gp-text="" data-gp-dnd="" data-gp-component-id="cTmtNare6YW" data-gp-component="null"
+                  tabindex="0">
+                  <p class="gp-component-id-rsEeOXizKDi" data-id="quill-node-0">Join our Q&A every Monday at 7PM</p>
+                </div>
+                <a data-gp-button-id="1IkYom2aG"
+                  class="topdragger items-center gp-component gp-component-id-J5TQ6l71DC" data-gp-style=""
+                  data-gp-dnd=""
+                  href="https://us02web.zoom.us/meeting/register/uZUrde-orTku21ZN4MsFgY6uTx_g0RGKMQ#/registration"
+                  target="_blank" data-gp-component="button" data-gp-component-id="J5TQ6l71DC">
+                  <div style="display: inline-block; flex-grow: 1;">
+                    <div class="gp-component gp-component-id-nsVJgwISAc" data-gp-component="button main-label"
+                      data-gp-style="" data-gp-component-id="nsVJgwISAc">Register Here</div>
                   </div>
-                  <div class="gp-text-container gp-component gp-component-id-SIYvVSkvUqQ" data-gp-style=""
-                    data-gp-text="" data-gp-dnd="" data-gp-component-id="SIYvVSkvUqQ" data-gp-component="null"
-                    tabindex="0">
-                    <p class="gp-component-id-0DirM3qmb3" data-id="quill-node-0">Watch the Pre-membership Education
-                      Seminar (PMES) video</p>
+                </a>
+              </div>
+            </section>
+            <section id="content-6" class="section-content-style">
+              <div class="horizontal-content">
+                <h2>STEP 5</h2>
+                <div class="gp-text-container gp-component gp-component-id-cTmtNare6YW" data-gp-style=""
+                  data-gp-text="" data-gp-dnd="" data-gp-component-id="cTmtNare6YW" data-gp-component="null"
+                  tabindex="0">
+                  <p class="gp-component-id-rsEeOXizKDi" data-id="quill-node-0">Join our Q&A every Monday at 7PM</p>
+                </div>
+                <a data-gp-button-id="1IkYom2aG"
+                  class="topdragger items-center gp-component gp-component-id-J5TQ6l71DC" data-gp-style=""
+                  data-gp-dnd=""
+                  href="https://us02web.zoom.us/meeting/register/uZUrde-orTku21ZN4MsFgY6uTx_g0RGKMQ#/registration"
+                  target="_blank" data-gp-component="button" data-gp-component-id="J5TQ6l71DC">
+                  <div style="display: inline-block; flex-grow: 1;">
+                    <div class="gp-component gp-component-id-nsVJgwISAc" data-gp-component="button main-label"
+                      data-gp-style="" data-gp-component-id="nsVJgwISAc">Register Here</div>
                   </div>
-                  <div data-gp-dnd="" data-gp-style="" class="gp-component-id-AhFyc8h65 gp-component"
-                    data-gp-component="video-all" data-gp-component-id="AhFyc8h65" tabindex="0">
-                    <div class="bg-black cursor-pointer gp-video-ratio" style="padding-bottom: 56.25%;"> <iframe
-                        src="https://www.youtube.com/embed/y765JaBKvU8?rel=0&modestbranding=1&controls=1"
-                        data-gp-vembed-id="VFNOaeBzI" allow="autoplay" frameborder="0" scrolling="no" marginheight="0"
-                        marginwidth="0" allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen=""
-                        oallowfullscreen="" msallowfullscreen=""></iframe> </div>
+                </a>
+              </div>
+            </section>
+            <section id="content-7" class="section-content-style">
+              <div class="horizontal-content">
+                <h2>STEP 6</h2>
+                <div class="gp-text-container gp-component gp-component-id-pzzGDM2LY_S" data-gp-style=""
+                  data-gp-text="" data-gp-dnd="" data-gp-component-id="pzzGDM2LY_S" data-gp-component="null"
+                  tabindex="0">
+                  <p class="gp-component-id-hl9JaPgBTxc" data-id="quill-node-0">Pay the registration fee and initial
+                    share capital</p>
+                </div>
+                <div class="gp-component-id-Jb7z_C1oi gp-component" data-gp-dnd="" data-gp-style=""
+                  data-gp-component="layout-2-2" data-gp-component-id="Jb7z_C1oi" tabindex="0">
+                  <div class="gp-component-id-qUiN2qlEO">
+                    <div class="gp-component-id-skpC6TdKAQ" data-gp-grid-col=""> </div>
+                    <div class="gp-component-id-0njcUWPfaG" data-gp-grid-col=""> </div>
                   </div>
                 </div>
-              </div>
-              <div class="gp-component-id-DUzT05NSQ7" data-gp-grid-col="">
-                <div class="gp-component-id-1fGYTUvjX7 gp-component" data-gp-container="" data-gp-style=""
-                  data-gp-component-id="1fGYTUvjX7" data-gp-component="container" tabindex="0">
-                  <div class="gp-text-container gp-component gp-component-id-ZQpctrEWmat" data-gp-style=""
-                    data-gp-text="" data-gp-dnd="" data-gp-component-id="ZQpctrEWmat" data-gp-component="null"
-                    tabindex="0">
-                    <h5 class="gp-component-id-Ytqk9CAOOg" data-id="quill-node-0">STEP 3</h5>
-                  </div>
-                  <div class="gp-text-container gp-component gp-component-id-p0jIs80eJGM" data-gp-style=""
-                    data-gp-text="" data-gp-dnd="" data-gp-component-id="p0jIs80eJGM" data-gp-component="null" style=""
-                    tabindex="0">
-                    <p class="gp-component-id-cgTWAMMviki" data-id="quill-node-0">Participate in the planned Capital
-                      Share and Subscription requirement of at least 15 shares</p>
-                  </div>
-                  <div class="gp-text-container gp-component gp-component-id-gfVQ4z1jL9" data-gp-style="true"
-                    data-gp-text="true" data-gp-dnd="true" data-gp-component-id="gfVQ4z1jL9" data-gp-component="null"
-                    style="" tabindex="0">
-                    <p class="gp-component-id-r_p9u15mG" data-id="quill-node-0">Share Capital ( minimum of 15 shares
-                      @P100/share)</p>
-                    <p class="gp-component-id-r_p9u15mG" data-id="quill-node-1">= <strong><em>P1,500</em></strong></p>
-                    <p class="gp-component-id-r_p9u15mG" data-id="quill-node-2"><br></p>
-                    <p class="gp-component-id-r_p9u15mG" data-id="quill-node-3">Subscribed Capital (minimum of 35 shares
-                      @P100/share)</p>
-                    <p class="gp-component-id-r_p9u15mG" data-id="quill-node-4">= <strong><em>P3,500</em></strong></p>
-                    <p class="gp-component-id-r_p9u15mG" data-id="quill-node-5"><strong><em>﻿</em></strong></p>
-                    <p class="gp-component-id-r_p9u15mG" data-id="quill-node-6">(note: payable in 24 months)</p>
-                    <p class="gp-component-id-r_p9u15mG" data-id="quill-node-7"><br></p>
-                    <p class="gp-component-id-r_p9u15mG" data-id="quill-node-8"><strong>TOTAL
-                        =</strong> <strong><em>P5,000</em></strong></p>
-                  </div>
+                <div class="gp-text-container gp-component gp-component-id-KSs1pWJkfr" data-gp-style="true"
+                  data-gp-text="true" data-gp-dnd="true" data-gp-component-id="KSs1pWJkfr" data-gp-component="null"
+                  style="" tabindex="0">
+                  <p class="gp-component-id-8dVwLxdcv" data-id="quill-node-0">Membership Fee </p>
+                  <p class="gp-component-id-8dVwLxdcv" data-id="quill-node-1">= <strong><em>P1,500
+                        (lifetime)</em></strong></p>
+                  <p class="gp-component-id-8dVwLxdcv" data-id="quill-node-2"><br></p>
+                  <p class="gp-component-id-8dVwLxdcv" data-id="quill-node-3">Share Capital ( minimum of 15 shares
+                    @P100/share) </p>
+                  <p class="gp-component-id-8dVwLxdcv" data-id="quill-node-4">= <strong><em>P1,500</em></strong></p>
+                  <p class="gp-component-id-8dVwLxdcv" data-id="quill-node-5"><br></p>
+                  <p class="gp-component-id-8dVwLxdcv" data-id="quill-node-6">(note: remaining subscribed capital to
+                    pay within 24 months)</p>
+                  <p class="gp-component-id-8dVwLxdcv" data-id="quill-node-7"><br></p>
+                  <p class="gp-component-id-8dVwLxdcv" data-id="quill-node-8"><strong>TOTAL = <em>P3,000</em></strong>
+                  </p>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="gp-component-id-yZ53ow1mwP6 gp-component" data-gp-component="layout-3-3-3" data-gp-dnd=""
-            data-gp-style="" data-gp-component-id="yZ53ow1mwP6" tabindex="0">
-            <div class="gp-component-id-YY08VEPpop1">
-              <div class="gp-component-id-2vtFuLAmTwU" data-gp-grid-col="">
-                <div class="gp-component-id-04i3VnwZRQT gp-component" data-gp-container="" data-gp-style=""
-                  data-gp-component-id="04i3VnwZRQT" data-gp-component="container" tabindex="0">
-                  <div class="gp-text-container gp-component gp-component-id-HZQwilzaeqR" data-gp-style=""
-                    data-gp-text="" data-gp-dnd="" data-gp-component-id="HZQwilzaeqR" data-gp-component="null"
-                    tabindex="0">
-                    <h5 class="gp-component-id-VYPV8vs3OAt" data-id="quill-node-0">STEP 4</h5>
-                  </div>
-                  <div class="gp-text-container gp-component gp-component-id-cTmtNare6YW" data-gp-style=""
-                    data-gp-text="" data-gp-dnd="" data-gp-component-id="cTmtNare6YW" data-gp-component="null"
-                    tabindex="0">
-                    <p class="gp-component-id-rsEeOXizKDi" data-id="quill-node-0">Join our Q&A every Monday at 7PM</p>
-                  </div><a data-gp-button-id="1IkYom2aG"
-                    class="topdragger items-center gp-component gp-component-id-J5TQ6l71DC" data-gp-style=""
-                    data-gp-dnd=""
-                    href="https://us02web.zoom.us/meeting/register/uZUrde-orTku21ZN4MsFgY6uTx_g0RGKMQ#/registration"
-                    target="_blank" data-gp-component="button" data-gp-component-id="J5TQ6l71DC">
-                    <div style="display: inline-block; flex-grow: 1;">
-                      <div class="gp-component gp-component-id-nsVJgwISAc" data-gp-component="button main-label"
-                        data-gp-style="" data-gp-component-id="nsVJgwISAc">Register Here</div>
-                    </div>
-                  </a>
+            </section>
+            <section id="content-8" class="section-content-style">
+              <div class="horizontal-content">
+                <h2>STEP 7</h2>
+                <div class="gp-text-container gp-component gp-component-id-OQCTi2AG8WM" data-gp-style="" data-gp-text=""
+                  data-gp-dnd="" data-gp-component-id="OQCTi2AG8WM" data-gp-component="null" tabindex="0" style="">
+                  <p class="gp-component-id-wqFuS1t0Ih" data-id="quill-node-0">Email your proof of payment to <a
+                      href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                      data-cfemail="3b4b5a42565e554f48155d544b4858547b5c565a525715585456">[email protected]</a></p>
                 </div>
               </div>
-              <div class="gp-component-id-2yw7X22fVQ6" data-gp-grid-col="">
-                <div class="gp-component-id-yt_xRPw5dCC gp-component" data-gp-container="" data-gp-style=""
-                  data-gp-component-id="yt_xRPw5dCC" data-gp-component="container" tabindex="0">
-                  <div class="gp-text-container gp-component gp-component-id-ibnS4VzV8QT" data-gp-style=""
-                    data-gp-text="" data-gp-dnd="" data-gp-component-id="ibnS4VzV8QT" data-gp-component="null"
-                    tabindex="0">
-                    <h5 class="gp-component-id-nJhDUMbAiH2" data-id="quill-node-0">STEP 5</h5>
-                  </div>
-                  <div class="gp-text-container gp-component gp-component-id-S0WugocI7fP" data-gp-style=""
-                    data-gp-text="" data-gp-dnd="" data-gp-component-id="S0WugocI7fP" data-gp-component="null"
-                    tabindex="0">
-                    <p class="gp-component-id-MIyOqUQeXU3" data-id="quill-node-0">Fill up and submit the membership
-                      subscription agreement</p>
-                  </div><a data-gp-button-id="XM_soJ2tN"
-                    class="topdragger items-center gp-component gp-component-id-A6h0vclMWY" data-gp-style=""
-                    data-gp-dnd="" href="https://drive.google.com/file/d/1vO2M8OPxuW5F7iPuTyrbBDlAmvr4Mijc/view"
-                    target="_blank" data-gp-component="button" data-gp-component-id="A6h0vclMWY">
-                    <div style="display: inline-block; flex-grow: 1;">
-                      <div class="gp-component gp-component-id-S7zVC6bAMc" data-gp-component="button main-label"
-                        data-gp-style="" data-gp-component-id="S7zVC6bAMc">Get The Form Here</div>
-                    </div>
-                  </a><a data-gp-button-id="Iu8gnNJJ4"
-                    class="topdragger items-center gp-component gp-component-id-MCfoAwgyxU" data-gp-style=""
-                    data-gp-dnd="" data-gp-component="button" data-gp-component-id="MCfoAwgyxU">
-                    <div style="display: inline-block; flex-grow: 1;">
-                      <div class="gp-component gp-component-id-27Y1B63DGg" data-gp-component="button main-label"
-                        data-gp-style="" data-gp-component-id="27Y1B63DGg">Submit The Form Here</div>
-                    </div>
-                  </a>
+            </section>
+            <section id="content-9" class="section-content-style">
+              <div class="horizontal-content">
+                <h2>STEP 8</h2>
+                <div class="gp-text-container gp-component gp-component-id-UdxBDX_eEw" data-gp-style="" data-gp-text=""
+                  data-gp-dnd="" data-gp-component-id="UdxBDX_eEw" data-gp-component="null" tabindex="0">
+                  <p class="gp-component-id-JqVIRE3zDe" data-id="quill-node-0">Wait for BODs approval of your application
+                  </p>
                 </div>
               </div>
-              <div class="gp-component-id-0dhwZk1HrRY" data-gp-grid-col="">
-                <div class="gp-component-id-9bJfYrtvk54 gp-component" data-gp-container="" data-gp-style=""
-                  data-gp-component-id="9bJfYrtvk54" data-gp-component="container" tabindex="0">
-                  <div class="gp-text-container gp-component gp-component-id-rkf0PtCnGUz" data-gp-style=""
-                    data-gp-text="" data-gp-dnd="" data-gp-component-id="rkf0PtCnGUz" data-gp-component="null"
-                    tabindex="0">
-                    <h5 class="gp-component-id-llvL5JrQ8dY" data-id="quill-node-0">STEP 6</h5>
-                  </div>
-                  <div class="gp-text-container gp-component gp-component-id-pzzGDM2LY_S" data-gp-style=""
-                    data-gp-text="" data-gp-dnd="" data-gp-component-id="pzzGDM2LY_S" data-gp-component="null"
-                    tabindex="0">
-                    <p class="gp-component-id-hl9JaPgBTxc" data-id="quill-node-0">Pay the registration fee and initial
-                      share capital</p>
-                  </div>
-                  <div class="gp-component-id-Jb7z_C1oi gp-component" data-gp-dnd="" data-gp-style=""
-                    data-gp-component="layout-2-2" data-gp-component-id="Jb7z_C1oi" tabindex="0">
-                    <div class="gp-component-id-qUiN2qlEO">
-                      <div class="gp-component-id-skpC6TdKAQ" data-gp-grid-col=""> </div>
-                      <div class="gp-component-id-0njcUWPfaG" data-gp-grid-col=""> </div>
-                    </div>
-                  </div>
-                  <div class="gp-text-container gp-component gp-component-id-KSs1pWJkfr" data-gp-style="true"
-                    data-gp-text="true" data-gp-dnd="true" data-gp-component-id="KSs1pWJkfr" data-gp-component="null"
-                    style="" tabindex="0">
-                    <p class="gp-component-id-8dVwLxdcv" data-id="quill-node-0">Membership Fee </p>
-                    <p class="gp-component-id-8dVwLxdcv" data-id="quill-node-1">= <strong><em>P1,500
-                          (lifetime)</em></strong></p>
-                    <p class="gp-component-id-8dVwLxdcv" data-id="quill-node-2"><br></p>
-                    <p class="gp-component-id-8dVwLxdcv" data-id="quill-node-3">Share Capital ( minimum of 15 shares
-                      @P100/share) </p>
-                    <p class="gp-component-id-8dVwLxdcv" data-id="quill-node-4">= <strong><em>P1,500</em></strong></p>
-                    <p class="gp-component-id-8dVwLxdcv" data-id="quill-node-5"><br></p>
-                    <p class="gp-component-id-8dVwLxdcv" data-id="quill-node-6">(note: remaining subscribed capital to
-                      pay within 24 months)</p>
-                    <p class="gp-component-id-8dVwLxdcv" data-id="quill-node-7"><br></p>
-                    <p class="gp-component-id-8dVwLxdcv" data-id="quill-node-8"><strong>TOTAL = <em>P3,000</em></strong>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            </section>
           </div>
         </div>
-      </section>
-      <section class="gp-component-id-NIz6dzbPs gp-component" data-gp-component="block" data-gp-style=""
-        data-gp-block-id="11979" data-gp-block="true" data-gp-block-type="block" data-gp-block-data="{"
-        id":11979,"type":"block","thumbnail":"https:="" assets.grooveapps.com="" elements-previews="" thumbs=""
-        content10.png","category":"content","tag":"wireframe","user_id":"global","filename":"_content_9","height":0,"global":1,"tailwind":1}"=""
-        data-gp-component-id="NIz6dzbPs" id="NIz6dzbPs" tabindex="0" style=""><a name="NIz6dzbPs"
-          data-gp-block-anchor=""></a>
-        <div class="" data-section-overlay=""></div>
-        <div class="gp-component-id-ch98t2Zgce gp-component" data-gp-style="" data-gp-component-id="ch98t2Zgce"
-          data-gp-component="null">
-          <div class="gp-component-id-xsGzurAkvF gp-component" data-gp-container="" data-gp-style=""
-            data-gp-component-id="xsGzurAkvF" data-gp-component="container" tabindex="0">
-            <div class="gp-text-container gp-component gp-component-id-XJ8gRe59ru" data-gp-style="" data-gp-text=""
-              data-gp-dnd="" data-gp-component-id="XJ8gRe59ru" data-gp-component="null" tabindex="0">
-              <h3 class="gp-component-id-A7LPPoxyss" data-id="quill-node-0">STEP 7</h3>
-            </div>
-            <div class="gp-text-container gp-component gp-component-id-OQCTi2AG8WM" data-gp-style="" data-gp-text=""
-              data-gp-dnd="" data-gp-component-id="OQCTi2AG8WM" data-gp-component="null" tabindex="0" style="">
-              <p class="gp-component-id-wqFuS1t0Ih" data-id="quill-node-0">Email your proof of payment to <a
-                  href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                  data-cfemail="3b4b5a42565e554f48155d544b4858547b5c565a525715585456">[email protected]</a></p>
-            </div>
-          </div>
-          <div class="gp-component gp-component-id-FrlWVA2dl" data-gp-container="" data-gp-style=""
-            data-gp-component-id="FrlWVA2dl" data-gp-component="container" tabindex="0">
-            <div class="gp-text-container gp-component gp-component-id-8EkLW0dHsq" data-gp-style="" data-gp-text=""
-              data-gp-dnd="" data-gp-component-id="8EkLW0dHsq" data-gp-component="null" tabindex="0">
-              <h3 class="gp-component-id-HdHaV7aqn2" data-id="quill-node-0">STEP 8</h3>
-            </div>
-            <div class="gp-text-container gp-component gp-component-id-UdxBDX_eEw" data-gp-style="" data-gp-text=""
-              data-gp-dnd="" data-gp-component-id="UdxBDX_eEw" data-gp-component="null" tabindex="0">
-              <p class="gp-component-id-JqVIRE3zDe" data-id="quill-node-0">Wait for BODs approval of your application
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
       <section class="gp-component gp-component-id-2jV1SK0XI" data-gp-component="block" data-gp-style=""
         data-gp-block-id="12342242" data-gp-block="true" data-gp-block-data="{"
         id":12342242,"type":"block","thumbnail":"="" assets.grooveapps.com="" pages-previews=""
@@ -468,6 +331,11 @@
   <script data-cfasync="false" src="js/email-decode.min.js"></script>
   <script> (function () { var callSiteCallbacks = function () { if (window.site && window.site.subscribed) { site.subscribed.forEach(callback => { callback(); }); } }; document.readyState !== 'loading' ? callSiteCallbacks() : document.addEventListener("DOMContentLoaded", callSiteCallbacks); })(); </script>
   <script src="js/inpage_published.js"></script>
+  <!-- animations -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
+  <script src="js/membership_animation.js"></script>
 </body>
 
 </html>
